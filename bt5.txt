@@ -1,0 +1,28 @@
+Nếu Robot gặp một thư mục trùng tên với file đang di chuyển, hệ thống báo lỗi *"Is a directory"* (kiến thức đã học ở Lesson 04). Robot cần xử lý thế nào để không gây crash?
+
+  Vấn đề: Khi Robot thực thi lệnh di chuyển file (ví dụ: mv image.png media), nếu trong thư mục hiện tại đã tồn phí một thư mục (directory) tên là media thay vì file, hệ thống Linux/Unix sẽ trả về lỗi: mv: cannot move 'image.png' to 'media': Is a directory và lệnh có thể bị crash nếu viết kịch bản dạng đơn giản. 
+Giải pháp : 
+- Kiểm tra trước khi di chuyển.
+- Chỉ định chính xác đường dẫn file đích.
+Sơ đồ luồng IOP: 
+ - Input: 
+   + File ảnh image1.png,photo.jpg
+   + File code main.py,script.py
+   + File tạm cache.tmp,temp_data.tmp
+- Process
+   + Kiểm tra đuôi file (.png, .jpg, .py, .tmp)              
+   + Kiểm tra sự tồn tại và tính hợp lệ của thư mục đích     
+- Output:
+Di chuyển ảnh (.png, .jpg) vào thư mục media/            
+ 
+   + Di chuyển code (.py) vào thư mục scripts/                
+   + Xóa file tạm (.tmp) để giải phóng dung lượng             
+   + Ghi log trạng thái / Bỏ qua an toàn nếu lỗi "Is a dir"   
+
+Danh sách câu lệnh kịch:
+mkdir -p media scripts
+
+mv .png media
+mv .jpg media
+mv .py scripts 
+rm .tmp

@@ -1,0 +1,9 @@
+
+1. [Lệnh gì?] drink_module (Để tạo thư mục tên là drink_module)
+mkdir drink_module 
+
+2.[Lệnh gì?] drink_module (Để di chuyển vào thư mục vừa tạo) 
+cd .\drink_module
+
+3.[Lệnh gì?] coffee.txt tea.txt (Để tạo 2 file trống tên là coffee.txt và tea.txt cùng lúc)
+ ni coffee.txt,tea.txt 

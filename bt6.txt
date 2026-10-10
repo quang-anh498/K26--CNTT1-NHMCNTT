@@ -1,0 +1,38 @@
+- Bước 1: Từ thư mục Home (~), tạo thư mục smart-farm chứa bin, config, data bằng 1 dòng lệnh PowerShell.
+
+- Bước 2: Tạo file ẩn .env trong config để chứa mật khẩu cảm biến. Giải thích tại sao Get-ChildItem thông thường không nhìn thấy file .env?
+ Mở tệp config gõ lệnh ni .env 
+Lý do Get-ChildItem thông thường không nhìn thấy file .env là vì trong hệ điều hành, file có tên bắt đầu bằng dấu chấm (.env) được hệ thống coi là tệp ẩn  hoặc file hệ thống.
+
+- Bước 3: Sao chép file mẫu template.ps1 từ thư mục Public vào bin và đổi tên thành pump_control.ps1 chỉ trong 1 lệnh duy nhất
+ copy-item public\tmeplate.ps1 binpump_control.ps1
+
+- Bước 4: Dùng lệnh liệt kê để kiểm tra lại toàn bộ cấu trúc thư mục smart-farm vừa tạo, xác nhận đủ 3 thư mục con và các file đã đúng vị trí
+gõ dir
+
+
+Để khắc phục lỗi "Access to the path is denied" (Từ chối truy cập) khi sao chép hoặc thao tác với hệ thống trong PowerShell, bạn cần chạy phiên làm việc của PowerShell với quyền Quản trị viên (Administrator). Dưới đây là cách thực hiện cùng với bản phân tích luồng IPO và nhật ký lệnh hoàn chỉnh cho toàn bộ quá trình thiết lập.
+
+Bản phân tích luồng IPO:
+1. Input:
+Vị trí thư mục gốc: Thư mục Home (~).
+
+Tài nguyên nguồn: Thư mục Public chứa file mẫu template.ps1.
+
+Yêu cầu hệ thống: Tạo cấu trúc thư mục dự án (smart-farm/bin, smart-farm/config, smart-farm/data) và sao chép/đổi tên file cấu hình điều khiển (pump_control.ps1).
+
+2.Process: 
+Mở môi trường PowerShell (với quyền Administrator nếu phát sinh lỗi phân quyền).
+
+Di chuyển đến thư mục Home và khởi tạo đồng thời cấu trúc thư mục dự án bằng lệnh tạo đường dẫn hàng loạt.
+
+3. Output: 
+Cấu trúc thư mục hoàn chỉnh tại ~/smart-farm/ bao gồm các thư mục con: bin, config, và data.
+
+Tệp lệnh thực thi pump_control.ps1 nằm sẵn sàng trong thư mục bin.
+
+PowerShell:
+ mkdir -p smart-fram bin,config,data
+ ni .env
+ copy-item public\tmeplate.ps1 binpump_control.ps1
+ dir

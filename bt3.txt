@@ -1,0 +1,28 @@
+Phần 1: Yêu cầu nghiệp vụ 
+1.1.  Tạo cây thư mục lồng nhau `smart-farm\data\logs` và `smart-farm\code` chỉ bằng **duy nhất 1 dòng lệnh** PowerShell.
+
+ mkdir -p smart-farm\data\log,smart-farm\code
+
+1.2. Tạo cùng lúc 3 file cấu hình: `config.json`, `sensors.py`, `.env` (file ẩn) bằng 1 dòng lệnh PowerShell
+  new-item config.json,sensors.py,.env
+
+1.3. Sao chép toàn bộ thư mục `code` sang `backup\code_v1` (bao gồm cả nội dung bên trong).
+ cp -r code backup\code_v1
+
+Phần 2: Mô hình IOP.
+Input : -  Nhập lệnh :         mkdir -p smart-farm\data\log,smart-farm\code
+        -  Tạo 3 file :        new-item config.json,sensors.py,.env
+        -  Sao chép thư mục:   cp -r code backup\code_v1
+ 
+Process : Khi nhập lệnh vào máy sẽ bắt đầu sử lí thông tin tạo ra thư mục theo yêu cầu
+          Sau khi tạo cây thư mục máy bắt đầu tạo các file từ yêu cầu thứ 2
+          Sau khi máy đã hoàn thành 2 yêu cầu trên thì máy sẽ nhận thông tin sao chép thư mục của 
+          yêu cầu thứ 3 
+
+Output : Cuối cùng máy sẽ hiện thông tin trên màn hình 
+         Nếu muốn xem thì mở folder sẽ có tất cả thư mục mình vừa tạo.
+            
+Danh sach câu lệnh PwerShell:
++ mkdir -p
++ new-item 
++ cp -r
