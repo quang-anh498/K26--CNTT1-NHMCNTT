@@ -1,0 +1,8 @@
+Phần1:
+1. Tại vì thực chất cat là alias của (get-content) lệnh này in toàn bộ màn hình ra ngay lập tức không dừng lại từng trang như less .
+2. khi đối mặt vối một tệp log có dung lượng khổng lồ, terminal phải gánh một khối lượng dữ liêu lớn đổ vào bộ nhớ sẽ dẫn đến hiện tượng giật lag tràn khung hình và dơ máy.
+3. Notepad truyền thống hoạt động theo cơ chế nạp toàn bộ nội dung tệp vào bộ nhớ RAM để xử lý hiển thị.
+
+Phẩn2 :
+1. Lệnh PowerShell: get-content server_log_500MB.log |more
+2. Lệnh PowerShell để chỉ xem 10 dòng cuối cùng : get-content server_log_500MB.log -tail 10 -wait
