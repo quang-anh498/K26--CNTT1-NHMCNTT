@@ -1,20 +1,38 @@
-Phần1 :
+﻿# Yêu cầu đề bài 
+## Cảm biến độ ẩm cho trang trại lan 
+1. Tổng quan .
+ Cảm biến độ ẩm giúp theo dõi độ ẩm không khí trong nhà  lưới. Đảm bảo môi trường tối ưu  cho hoa lan. 
+ ![ảnh hoa lan](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOtPN7VKlkEejqIyQOSHQIDjYI470EqxO1QL3VeZJ3Tg&s=10)
 
-1\. Sai lầm của Nam là sử dụng lệnh (Get-ChildItem -Filter "\*404\*"). Lệnh này chỉ liệt kệ các file có trong thư mục là viết tắt của (ls và dir) chỉ tìn các file có chứa "\*404\*" nên dẫn đến kết quả rỗng.
+ Thiết bị cần chuẩn bị
+ -  Cảm biến độ ẩm (DHT22 / AM2302) 
+ - Raspberry Pi 
+ - Dây nối Dupont 
+ 
+ 2. Các bước cài đặt 
+ ``` 
+ - Cập nhật hệ thống 
+ - Cài đặt thư viên cho cảm biến DHT22
+ - Kích hoạt giao tiếp 1-wire 
+ - Kiểm tra module đã được nhận 
+ - Chạy thử trương trình đọc cảm biến 
+ - Tự động chạy khi khởi động 
+ ```
+ 
+ 3. Bảng 
+ 
+ | Tiêu chí | Máy cảm biến A | Máy cảm biến B | 
+ | :----: | :----: | :----: |
+ | Cộng nghệ |
+ | Độ chính xác | 
+ | Khả năng kết nối 
+  
+  4. Bảng check list thiết bị 
 
-2\. **Get-childitem** sử dụng để tìm các tệp file có chứa tên theo mình muốn gọi.
-
-3\. **Select-string** dùng để liệt kê các dòng thông tin có chứa những chữ như "error" để sắp xếp tất cả chúng lại giúp ta không phải ngồi mò từng dòng 1.
-
-
-
-Phần 2 : 
-
-select-string "ERROR" access.log -filter
-
-
-
-
-
-&#x20;
+ - [x] Cập nhật thông tin 
+ - [x] Thiết bị vẫn bình thường 
+ - [ ]  Thiết bị lỗi 
+ - [ ] Cần sửa 
+ 
+ 
 

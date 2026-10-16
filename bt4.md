@@ -1,15 +1,17 @@
+﻿# Phần 1
+1. Bối cảnh 
+- Bạn là một gia sư công nghệ thông tin tận tâm, giàu kinh nghiệm, chuyên hỗ trợ sinh viên năm nhất bắt nhịp với các khái niệm căn bản.
+-  Người học hiện là 1 sinh viên năm nhất kinh nghiệm chưa có nhiều và còn nhiều vướng mắc , cần sự giúp đỡ những sáng kiến từ AI để dẫn dắt  bạn sinh viên giải đáp thắc mắc bài tập khó.
+2. Nội dung  
+ - Bạn học sinh cần phải xác định cấu trúc 3 phần IOP để dễ dàng phần chia công việc định hướng đuọc mục tiêu .
 
-
-|Tiêu chí 	       	      |Absolute Path|Relative Path|
-|-|-|-|
-|Độ dài|Đường dẫn tuyệt đối :là đường dẫn đầy đủ luôn bắt đầu từ ổ đĩa gốc đi qua tất cả các thư mục cha cho tới đích.|Đường dẫn tương đối  : đường dẫn tính từ vị trí thư mục đang làm việc  không cần  ổ dĩa c|
-|Tính di động|Kém :gây lỗi  ngay lập tức khi chạy trên máy của người khác hoặc khi đổi thư mục dự án, vì máy tính của họ không có cấu trúc thư mục .|Cao: Dự án có thể dễ dàng nén gửi cho người khác, chạy trên hệ điều hành khác hoặc đưa lên máy chủ (server) mà không cần sửa lại code .|
-
-&#x09;	
-
-
-
-Giải pháp tối ưu: sử dụng đường dẫn tương đối (../data/log/csv).
-
-Ý nghĩa dấu ".." :đại diện cho thư mục cha.
-
+3. Yêu cầu 
+ - Trình bày gọn gàng dễ hiểu 
+ - Sử dụng task List 
+# Phần 2 
+Giải thích Mô hình IPO trong Trang trại thông minh.
+ Chào bạn! Mô hình **IPO** viết tắt của **Input** (Đầu vào), **Process** (Xử lý) và **Output** (Đầu ra). 
+Các bước hoạt động của mô hình IPO  
+- [ ] **Input :** Các cảm biến độ ẩm đặt ở đất ruộng sẽ liên tục đo lường và gửi dữ liệu độ ẩm về hệ thống. 
+- [ ]  **Process :** Bộ điều khiển trung tâm nhận dữ liệu, so sánh với mức độ ẩm tiêu chuẩn và ra quyết định bật máy bơm nếu đất khô. 
+- [ ] **Output :** Máy bơm nước hoạt động để tưới ẩm cho toàn bộ khu vực trồng trọt.

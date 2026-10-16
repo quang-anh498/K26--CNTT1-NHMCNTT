@@ -1,22 +1,17 @@
-# &#x20;          Đề bài/ Yêu cầu
+﻿# Yêu cầu đề bài 
+## Phần 1 : 
+Lỗi 1 :  Tiêu đề với đề bài đều sử dụng h1  không phân chia rõ ràng . (##)
+Lỗi 2 : ảnh không hiển thị do thiếu (!) ở đầu cú pháp [logo dự án](https://greentech.vn/logo.png)
+Lỗi 3 : muốn in đậm nhưng chỉ dùng 1 (*) chỉ dùng để in nghiêng , in đậm phải dùng (**)
+Vì bạn ấy đã mắc những lỗi trên lên khiến file bị lộn xộn kết quả render không như ý.
+## Phần 2 :
 
-*Phần1: phân tích : 2 lỗi sai của Nam* 
-
-* *lỗi 1: Nam đã sử dụng dấu cách giữa các từ khiến cho máy không tạo được thư mục không đọc được lệnh lên sẽ xuất  báo chữ đỏ. Và không nên dùng các dấu . và dấu + hay dấu "cách" sẽ khiến PowerShell báo lỗi.*
-
-&#x20;  *Sửa lỗi định dạnh kebad case: Smart-Fram-Project*
-
-* *lỗi 2: là sai câu lệnh "cd Smart Fram Project" không có dấu ngoặc và do sai câu lệnh từ trước lên câu lệnh thứ 2 cũng không thể di chuyển thư mục được lên máy ko thể tìm thấy thư mục .*
-
-&#x20;  *Sửa lỗi cd nhấn tap xem có thư mục gi nếu cần thì gọi ra hoặc dùng dấu ""* 
-
-
-
-*Phần 2: Hoàn thiện* 
-
-&#x20;*mkdir "Smart Fram Project"* 
-
-&#x20;*cd '.\\Smart Fram Project'* 
-
-&#x20;*mkdir src/sensors/temperature*
-
+# Lợi ích của rau sạch
+### Danh sách rau sạch:
+| Rau | lợi ích | 
+| :---: | :---: |
+| Rau cải | chất sợ| 
+| Hoa chuối | chứa lượng lớn chất xơ, chất chống oxy hóa và các khoáng chất thiết yếu
+| Ớt chuông | mang lại nhiều lợi ích sức khỏe nhờ chứa hàm lượng vitamin A, C, E, B6 và các chất chống oxy hóa phong phú 
+![ảnh rau củ](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgJdA3e4v6QYlOvT_TydJuz6DwgFTRRn4RL7ZH9zC2zA&s=10)
+**Rau củ rất có lợi cho sức khỏe chung của mọi người và mang lại rất nhiều giá trị  protein cho sức khỏe con người.**
