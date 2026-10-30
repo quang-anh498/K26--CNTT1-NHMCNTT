@@ -1,38 +1,25 @@
-﻿# Yêu cầu đề bài 
-## Cảm biến độ ẩm cho trang trại lan 
-1. Tổng quan .
- Cảm biến độ ẩm giúp theo dõi độ ẩm không khí trong nhà  lưới. Đảm bảo môi trường tối ưu  cho hoa lan. 
- ![ảnh hoa lan](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOtPN7VKlkEejqIyQOSHQIDjYI470EqxO1QL3VeZJ3Tg&s=10)
+﻿**Tên:** Đặng Quang Anh 
+**Lớp:** CNTT1
+**Môn:** NMCNTT
+**Session:** 15
+# Vấn đề 
+Bạn nhân viên đã vô tình gửi link với quyền Editor cho một ứng viên bên ngoài.
+# Yêu cầu 
 
- Thiết bị cần chuẩn bị
- -  Cảm biến độ ẩm (DHT22 / AM2302) 
- - Raspberry Pi 
- - Dây nối Dupont 
- 
- 2. Các bước cài đặt 
- ``` 
- - Cập nhật hệ thống 
- - Cài đặt thư viên cho cảm biến DHT22
- - Kích hoạt giao tiếp 1-wire 
- - Kiểm tra module đã được nhận 
- - Chạy thử trương trình đọc cảm biến 
- - Tự động chạy khi khởi động 
- ```
- 
- 3. Bảng 
- 
- | Tiêu chí | Máy cảm biến A | Máy cảm biến B | 
- | :----: | :----: | :----: |
- | Cộng nghệ |
- | Độ chính xác | 
- | Khả năng kết nối 
-  
-  4. Bảng check list thiết bị 
+- Bản thiết kế phân quyền: Bảng phân loại đối tượng tương ứng với các mức quyền truy cập an toàn nhất.
+- Kịch bản xử lý sự cố: Quy trình 3 bước xử lý khi phát hiện dữ liệu bị chia sẻ sai quyền.
 
- - [x] Cập nhật thông tin 
- - [x] Thiết bị vẫn bình thường 
- - [ ]  Thiết bị lỗi 
- - [ ] Cần sửa 
- 
- 
+# Bài làm
+Lập bảng 
 
+| Nhòm đối đối tượng  |  Mức quyền truy cập an toàn | Giải thích và phạm vi quyền hạn |
+| :---: | :---: | :---| 
+| Trưởng phòng Nhân sự | Chủ sở hữu và  Editor | Có quyền giám sát cấp phép truy cập cho mọi người trong nhóm.
+| Các Trưởng bộ phận | Commenter | Chỉ được xem danh sách và đưa ra các đánh giá, không được quyền chỉnh sửa.
+| Nhân viên  nhân sự | viewer | Tra cứu thông tin để phục vụ công việc liên lạc |
+| Ứng viên tuyển dụng | No access | Chặn quyền truy cập| 
+ 
+ Kịch bản xử lý sự cố: 
+ Bước 1:  Thay đổi quyền truy cập 
+ Bước 2: Kiểm tra đánh giá sự cố ( kiếm tra xem ai đã truy cập ) 
+ Bước 3: Khắc phục (Khôi phục lại quyền ) 
